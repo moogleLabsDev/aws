@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>result</title>
+ 
+</head>
+<body>
+	<h2>Result</h2>
+    {% for table in tables %}
+        <table>
+            <tbody>
+                {{ table|safe }}
+            </tbody>
+        </table>
+    {% endfor %}
+    
+    <a href="getCSV" >Download</a>
+    <a href="/">Home</a>
+
+</body>
+</html>
